@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="list">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Carrot</li>
+  </ul>
+<script type="text/javascript">
+  var fruitList = document.getElementById("list");
+  var fruitListItems = fruitList.querySelectorAll('li');
+  var length = fruitListItems.length;
+  while (length--)
+    fruitList.appendChild(fruitListItems[length]);
+</script>
+</body>
+</html>
