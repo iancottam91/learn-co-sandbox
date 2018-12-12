@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Iterate</title>
+</head>
+<body>
+  <script>
+ 
+  
+    let flight = {
+      depart: 'JFK',
+      arrive: 'LHR',
+      date: '2018-07-29',
+      duration: 415,
+      aircraft: {
+        manufacturer: 'Airbus',
+        model: 'A340',
+        variant: '600'
+      }
+    }
+    
+    let summary = "";  
+    
+    for (let details in flight) {
+      if (typeof(flight[details]) == 'object') {
+        
+        for (let prop in flight[details]) {
+          summary += flight[details][prop] + ' ';
+        }
+        
+      } else {
+        summary += flight[details] + " ";
+      }
+        
+    }
+    
+    console.log(summary);
+ 
+ 
+ 
+ 
+ 
+ 
+
+    
+    
+    
+    
+    
+
+    // for (const item of array) {
+    //   console.log(item);
+    // }
+    // for (variable of iterable) {
+    //   statement
+    // }
+
+    // let iterable = [10, 20, 30];
+    // for (let value of iterable) {
+    //   value += 1;
+    //   console.log(value);
+    // }
+
+    // through to page 3 ...
+
+    // let flight = {
+    //   depart: 'JFK',
+    //   arrive: 'LHR',
+    //   date: '2018-07-29',
+    //   duration: 415,
+    //   aircraft: {
+    //     manufacturer: 'Airbus',
+    //     model: 'A340',
+    //     variant: '600'
+    //   }
+    // }
+
+    // let summary = "";
+    // keys or values?
+    // for (details in flight) {
+      // console.log(details);
+      // console.log(flight[details]);
+      // summary += flight[details] + ' ';
+    // }
+    // console.log(summary);
+
+
+    // try to do this in the lesson, not copy and paste it.
+    // for (details in flight) {
+    //   if (typeof(flight[details]) == 'object') {
+    //     for (props in flight[details]) {
+    //       summary += flight[details][props] + ' ';
+    //     }
+    //   } else {
+    //     summary += flight[details] + ' ';
+    //   }
+    // }
+    // console.log(summary);
+
+
+    // show map
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+
+
+  </script>
+</body>
+</html>
