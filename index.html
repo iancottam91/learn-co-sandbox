@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fetch Example</title>
+</head>
+<body>
+  <script>
+    fetch('https://api.github.com/users/iancottam91').then(response => {
+      const promise = response.json();
+      console.log(promise);
+      return promise;
+    }).then(json => console.log(json))
+  </script>
+</body>
+</html> 
