@@ -8,9 +8,10 @@
   <script>
     fetch('https://anapioficeandfire.com/api/books').then(response => {
       const promise = response.json();
-      console.log(promise);
       return promise;
-    }).then(json => console.log(json))
+    }).then(json => { 
+      console.log(json)
+    })
   </script>
 </body>
 </html>
